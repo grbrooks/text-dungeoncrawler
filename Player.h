@@ -6,8 +6,8 @@
 
 class Player: public GameCharacter {
 public:
-Room currentRoom;
-Room previousRoom;
+Room *currentRoom;
+Room * previousRoom;
 vector<Item> inventory;
 Player(string,int,int,int);
 void addItem(Item);
